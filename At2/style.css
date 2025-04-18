@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Monaco',monospace;
+    background-color: rgb(231, 236, 239);
+}
+header{
+    font: bold;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(231, 236, 239);
+    background-color: rgb(2, 1, 10);
+    height: 65px;
+  
+}
+header img{
+    margin: 0;
+    height: 70px;
+    width: 200px;
+    padding-right: 5px;
+}
+header h1{
+    margin-top: 15px;
+}
+nav {
+    margin-left: auto;
+    padding: 20px;  
+}
+
+nav ul {
+    display: flex;  
+    justify-content: left;  
+    margin: 0;
+    padding: 0;
+    list-style-type: none;  
+}
+nav a {
+    color: white;  
+    text-decoration: none;  
+    padding: 10px 20px;  
+    display: block;  
+    text-align: center; 
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s; 
+}
+nav a:hover {
+    background-color: rgb(4, 5, 46);  
+    color: rgb(253, 253, 253);  
+}
+.grupo {
+    height: 1250px;
+    background-image: url(img/gantatula.png);
+    background-size: cover;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+}
+article{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+   
+}
+article img {
+    padding: 10px;
+    width: 600px;
+    height: 500px;
+}
+p{
+    margin: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 15px;
+
+}
+#borboleta,
+#saturno,
+#sombreiro{
+    background-color: rgba(0, 0, 0, 0.712);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 1100px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 15px;
+}
+.interesse {
+    background-color: rgb(2, 1, 10);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+  
+.interesse h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.underline {
+    width: 40px;
+    height: 4px;
+    background-color:  rgb(4, 5, 46);
+    margin: 0 auto 30px auto;
+}
+  
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.card {
+    background-color:rgb(4, 5, 46);
+    width: 240px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: justify;
+}
+  
+.card img {
+    width: 100%;
+    display: block;
+}
+  
+.categoria {
+    font-size: 12px;
+    color: #ccc;
+    margin: 10px 10px 5px;
+    display: block;
+    letter-spacing: 2px;
+}
+  
+.card p {
+    font-size: 14px;
+    padding: 0 10px;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: rgba(13, 0, 164);
+}
+@media (max-width: 1024px) {
+    .grupo {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #borboleta,
+    #saturno,
+    #sombreiro {
+        width: 90%;
+        height: auto;
+    }
+
+    article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    header img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
