@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-color: rgb(231, 236, 239);
+}
+header{
+    font: bold;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(231, 236, 239);
+    background-color: rgb(39, 76, 119);
+    height: 65px;
+  
+}
+header img{
+    margin: 0;
+    height: 65px;
+    width: 65px;
+    padding-right: 5px;
+    clip-path: circle(45%);
+}
+header h1{
+    margin-top: 15px;
+}
+nav {
+    margin-left: auto;
+    padding: 20px;  
+}
+
+nav ul {
+    display: flex;  
+    justify-content: left;  
+    margin: 0;
+    padding: 0;
+    list-style-type: none;  
+}
+nav a {
+    color: white;  
+    text-decoration: none;  
+    padding: 10px 20px;  
+    display: block;  
+    text-align: center;  
+}
+nav a:hover {
+    background-color: rgb(96, 150, 186);  
+    color: black;  
+}
+main h2 {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+main h1{
+    display: flex;
+    justify-content: space-around;
+    font: bold;
+}
+/*
+.image {
+    width: 600px;
+    height: 550px;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: xx-large;
+    justify-content: space-around;
+    align-items: center;
+}*/
+.grupo {
+
+    height: 550px;
+    background-image: url(img/passport.png);
+    background-size: cover;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+article{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+article img {
+    padding: 60px;
+    width: 60px;
+    height: 60px;
+}
+#chat{
+    background-color: rgb(163, 206, 241);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 350px;
+    height: 180px;
+    border-radius: 10px;
+}
+#calender{
+    background-color: rgb(163, 206, 241);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    height: 180px;
+    border-radius: 10px;
+}
+#aviao{
+    background-color: rgb(163, 206, 241);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    height: 180px;
+    border-radius: 10px;
+}
+.destinos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.destino {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+.destino img {
+    width: 100%;
+    border-radius: 10px;
+}
+.preco {
+    font-size: 1.2em;
+    color: rgb(117, 18, 11);
+    font-weight: bold;
+}
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: rgb(96, 150, 186);
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: rgb(231, 236, 239);
+}
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    padding: 15px;
+    color: white;
+    background-color: rgb(139, 140, 137);
+}
